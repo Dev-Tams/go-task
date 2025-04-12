@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-    "math/rand"
-
+	"math/rand"
+	"sort"
 )
 
 func main() {
@@ -43,6 +43,19 @@ func main() {
 
     // rangeTwo = append(rangeTwo, "vowels")
     // fmt.Println(rangeOne, rangeTwo, rangeThree)
+
+
+    //slices
+    ages := []int{12, 54, 24, 5, 56, 23, 45, 67, 89, 90}
+    sort.Ints(ages)
+    fmt.Println(ages)
+
+
+    vowels := []string{"e", "u", "a", "o", "i"}
+    sort.Strings(vowels)
+    fmt.Println(vowels)
+
+ 
 
     greeting := greetUser("Tami")
     fmt.Println(greeting)
