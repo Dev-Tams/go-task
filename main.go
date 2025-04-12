@@ -55,6 +55,10 @@ func main() {
     sort.Strings(vowels)
     fmt.Println(vowels)
 
+    for i := 0; i < 5; i++{
+        fmt.Println(vowels[i])
+    }
+
  
 
     greeting := greetUser("Tami")
