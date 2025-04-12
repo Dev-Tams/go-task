@@ -55,11 +55,13 @@ func main() {
     sort.Strings(vowels)
     fmt.Println(vowels)
 
-    for i := 0; i < 5; i++{
-        fmt.Println(vowels[i])
-    }
+    // for i := range 5{
+    //     fmt.Println(vowels[i])
+    // }
 
- 
+    for index, value := range vowels{
+        fmt.Printf("the value of %v is %v]\n", index, value)
+    }
 
     greeting := greetUser("Tami")
     fmt.Println(greeting)
