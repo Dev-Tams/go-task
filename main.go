@@ -45,45 +45,90 @@ func main() {
     // fmt.Println(rangeOne, rangeTwo, rangeThree)
 
 
-    //slices
-    ages := []int{12, 54, 24, 5, 56, 23, 45, 67, 89, 90}
-    sort.Ints(ages)
-    fmt.Println(ages)
 
 
-    vowels := []string{"e", "u", "a", "o", "i"}
-    sort.Strings(vowels)
-    fmt.Println(vowels)
+    // vowels := []string{"e", "u", "a", "o", "i"}
+    // sort.Strings(vowels)
+    // fmt.Println(vowels)
 
     // for i := range 5{
     //     fmt.Println(vowels[i])
     // }
 
-    for index, value := range vowels{
-        fmt.Printf("the value of %v is %v]\n", index, value)
-    }
+    // for index, value := range vowels{
+    //     fmt.Printf("the value of %v is %v]\n", index, value)
+    // }
 
-    greeting := greetUser("Tami")
-    fmt.Println(greeting)
+    // greeting := greetUser("Tami")
+    // fmt.Println(greeting)
 
-    sum := addNumbers(5, 10)
-    fmt.Printf("The sum of 5 and 10 is: %d\n", sum)
+    // sum := addNumbers(5, 10)
+    // fmt.Printf("The sum of 5 and 10 is: %d\n", sum)
 
-    number := 6
-    fmt.Printf("Is %d even? %v\n", number, isEven(number))
+    // number := 6
+    // fmt.Printf("Is %d even? %v\n", number, isEven(number))
 
-    number = 4
-    fmt.Printf("Is %d odd? %v\n", number, isOdd(number))
+    // number = 4
+    // fmt.Printf("Is %d odd? %v\n", number, isOdd(number))
+
+
 
     fmt.Println("a good day for", rand.Intn(10), "hours of work")
 
+    //working with boolean
+    age := 18
 
+    fmt.Println(age == 30)
+    fmt.Println(age <= 30)
+    fmt.Println(age >= 45)
+
+
+    //slices
+    ages := []int{19, 54, 16, 5, 56, 9, 45, 14, 89, 90}
+
+    n := []string{"Tami", "ami", "ammy", "Tams"}
+
+
+    if age <= 17 {
+        fmt.Printf("age is %v \n", age)
+    }
+    if age <= 30 {
+        fmt.Printf("age is %v \n", age)
+    }
+
+
+    //for loop
+    for index, value := range ages{
+        if value >= 18  {
+            fmt.Printf("age %v is legal, continuing at position %v \n", value, index)
+            continue
+        }
+        if value <= 18  {
+            fmt.Printf("age %v is not legal, break at %v \n", value, index)
+            break
+        }
+    }
+
+    //sort ages
+     sort.Ints(ages)
+     fmt.Println("inputed ages are", ages)
+
+     chatToUsers(n, greetUser)
+
+     //loop over food map
+     menu()
+     
+       
 }
 // Function to greet a user
-func greetUser(name string) string {
-    return fmt.Sprintf("Welcome, %s!", name)
-}
 
+
+
+func chatToUsers(n []string, f func(string) ){
+    for _, value := range n{
+        f(value)
+    }
+}
 // Function to calculate the sum of two numbers
 func addNumbers(a int, b int) int {
     return a + b
@@ -97,6 +142,7 @@ func isEven(number int) bool {
 func isOdd(number int) bool {
     return number%2 != 0
 }
+
 
 
 
