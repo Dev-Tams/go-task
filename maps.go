@@ -10,11 +10,23 @@ func menu() {
 		4: "salad",
 	}
 
-	food[3]= "Yam"
+	food[3] = "Yam"
 	for k, v := range food {
 		fmt.Println(k, "-", v)
 	}
 
+	email := 1
 
+	if length := getLength(email); length < 3 {
+		fmt.Println("Email is invalid")
+	}
 
 }
+
+func getLength(e int) int{
+	return e
+
+}
+
+
+
