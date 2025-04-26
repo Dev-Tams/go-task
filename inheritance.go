@@ -1,12 +1,26 @@
 package main
 
-import "math"
+import (
+	"io"
+	"math"
+)
 
 type shape interface {
 	area() float64
 	perimeter() float64
 }
 
+//reader interface
+//writer interface
+//closer interface
+
+
+func doSomething(r io.Writer )error {
+	// do something with the reader
+	// do something with the writer
+	// do something with the closer
+	return nil	
+}
 type rect struct {
 	width, height float64
 }

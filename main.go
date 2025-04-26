@@ -12,25 +12,37 @@ func concat(strs ...int) int {
 }
 
 func main() {
-	final := concat(1, 2, 4)
-	fmt.Println(final)
+	// final := concat(1, 2, 4)
+	// fmt.Println(final)
+// 
+	//  ar := checkMail(9)
 
+	ev := &EmailValidator{Email: "tammyalemu@gmail.com"}
+	countLength(ev)
+	ev.checkMail()
 
-    names := []string{"bob", "sue", "alice"}
-    printStrings(names...)
+	
+    // names := []string{"bob", "sue", "alice"}
+    // printStrings(names...)
 
-    harryPotterAggregator := concatter()
-	harryPotterAggregator("Mr.")
-	harryPotterAggregator("and")
-	harryPotterAggregator("Mrs.")
-	harryPotterAggregator("Dursley")
-	harryPotterAggregator("of")
-	harryPotterAggregator("number")
-	harryPotterAggregator("four,")
-	harryPotterAggregator("Privet")
+    // harryPotterAggregator := concatter()
+	// harryPotterAggregator("Mr.")
+	// harryPotterAggregator("and")
+	// harryPotterAggregator("Mrs.")
+	// harryPotterAggregator("Dursley")
+	// harryPotterAggregator("of")
+	// harryPotterAggregator("number")
+	// harryPotterAggregator("four,")
+	// harryPotterAggregator("Privet")
 
-	fmt.Println(harryPotterAggregator("Drive"))
+	// fmt.Println(harryPotterAggregator("Drive"))
+
+    // r := doSomething(nil)
+    // println(r)
+    // r is nil, so it will not print anything
 }
+
+
 func printStrings(strings ...string) {
     for i := 0; i < len(strings); i++ {
         fmt.Println(strings[i])

@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func menu() {
 	food := map[int]string{
@@ -15,18 +17,4 @@ func menu() {
 		fmt.Println(k, "-", v)
 	}
 
-	email := 1
-
-	if length := getLength(email); length < 3 {
-		fmt.Println("Email is invalid")
-	}
-
 }
-
-func getLength(e int) int{
-	return e
-
-}
-
-
-
