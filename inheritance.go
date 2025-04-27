@@ -1,7 +1,7 @@
 package main
 
 import (
-	"io"
+	// "io"
 	"math"
 )
 
@@ -15,12 +15,12 @@ type shape interface {
 //closer interface
 
 
-func doSomething(r io.Writer )error {
-	// do something with the reader
-	// do something with the writer
-	// do something with the closer
-	return nil	
-}
+// func doSomething(r io.Writer )error {
+// 	// do something with the reader
+// 	// do something with the writer
+// 	// do something with the closer
+// 	return nil	
+// }
 type rect struct {
 	width, height float64
 }

@@ -26,6 +26,11 @@ func main() {
 	fmt.Println(carModel.color, carModel.engineNo, carModel.brand)
 
 
+	intSlice := []int{1, 2, 3, 4, 5}
+	floatSlice := []float64{1.1, 2.2, 3.3, 4.4, 5.5}
+
+	fmt.Println("Sum of int slice:", calcParam(intSlice))
+	fmt.Println("Sum of float slice:", calcParam(floatSlice))
 
 	
     // names := []string{"bob", "sue", "alice"}
