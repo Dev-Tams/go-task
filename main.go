@@ -17,9 +17,15 @@ func main() {
 // 
 	//  ar := checkMail(9)
 
-	ev := &EmailValidator{Email: "tammyalemu@gmail.com"}
-	countLength(ev)
-	ev.checkMail()
+	// ev := &EmailValidator{Email: "tammyalemu@gmail.com"}
+	// countLength(ev)
+	// ev.checkMail()
+
+	carModel :=  model{"red", "sport", 224, brand{"Toyota", "suv", 2009}}
+
+	fmt.Println(carModel.color, carModel.engineNo, carModel.brand)
+
+
 
 	
     // names := []string{"bob", "sue", "alice"}
