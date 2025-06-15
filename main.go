@@ -31,7 +31,8 @@ func main() {
 
 	fmt.Println("Sum of int slice:", calcParam(intSlice))
 	fmt.Println("Sum of float slice:", calcParam(floatSlice))
-
+	rangeSlice()
+	
 	
     // names := []string{"bob", "sue", "alice"}
     // printStrings(names...)
