@@ -1,4 +1,4 @@
-package main
+package deprecated
 
 //holds multiple types 
 

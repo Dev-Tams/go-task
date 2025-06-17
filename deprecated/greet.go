@@ -1,5 +1,4 @@
-package main
-
+package deprecated
 import "fmt"
 
 func greetUser(name string) {

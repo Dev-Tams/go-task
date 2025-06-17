@@ -1,4 +1,5 @@
-package methods
+package course
+
 import (
 	"math"
 )

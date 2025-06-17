@@ -1,7 +1,6 @@
 package deprecated
 
 import "fmt"
-import "github.com/dev-tams/go-task/struct"
 func concat(strs ...int) int {
 	final := 3
 	// strs is just a slice of strings

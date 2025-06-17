@@ -1,5 +1,4 @@
-package main
-
+package deprecated
 //generics allows a func to take in different params rather than explicitly defining diff funcs for same purpose
 
 func calcParam[T int | float64](slice []T) T {
